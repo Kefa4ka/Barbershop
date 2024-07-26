@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барбершоп</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="fade-in">Барбершоп</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#booking">Запис</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="fade-in">
+            <div class="container">
+                <h2>Ласкаво просимо до нашого Барбершопу!</h2>
+                <p>Ми пропонуємо найкращі послуги для чоловіків.</p>
+            </div>
+        </section>
+
+        <section id="services" class="fade-in">
+            <div class="container">
+                <h2>Наші послуги</h2>
+                <ul>
+                    <li>Стрижка - $20</li>
+                    <li>Гоління - $15</li>
+                    <li>Моделювання бороди - $10</li>
+                    <li>Комплексні послуги - $40</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="fade-in">
+            <div class="container">
+                <h2>Контактна інформація</h2>
+                <p>Адреса: вул. Прикладна, 123, Київ</p>
+                <p>Телефон: +380 123 456 789</p>
+                <p>Email: info@barbershop.com</p>
+            </div>
+        </section>
+
+        <section id="booking" class="fade-in">
+            <div class="container">
+                <h2>Запис онлайн</h2>
+                <form id="bookingForm">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="service">Послуга:</label>
+                    <select id="service" name="service">
+                        <option value="haircut">Стрижка</option>
+                        <option value="shaving">Гоління</option>
+                        <option value="beard">Моделювання бороди</option>
+                        <option value="complex">Комплексні послуги</option>
+                    </select>
+                    
+                    <label for="date">Дата:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <button type="submit" class="fade-in">Записатись</button>
+                </form>
+                <p id="confirmation" class="fade-in"></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
